@@ -1,7 +1,8 @@
 body {
     background-image: url(/assets/im/CandyBackground.jpg);
-    background-position: center;
+    background-position: contain;
     background-size: fill;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -33,16 +34,36 @@ article {
     height:500px ;
     width: 500px;
 }
+#cookie {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
+}
 .third-row {
     align-content: center;
     margin: 20px;
 }
 
+
 /* css du bouton reset */
 #data-cookie-reset {
+    font-size: 20px;
     background-color: blueviolet;
     color: white;
     align-content: center;
+    height: 100px;
+    width: 100px;
+    background-repeat:no-repeat;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor:pointer;
+    overflow: hidden;
+}
+
+#data-cookie-reset:hover{
+    background-color: green;;
 }
 
 aside {
@@ -56,17 +77,31 @@ aside {
     margin: 20px;
 }
 
-.btn1 {
-    font-size: 16px;
-    padding: 10px;
+
+/* setup button */ 
+.button {
+    background-color: red;
+    border-radius: 20px;
+    height: 60px;
+    width: 100px;
+    margin: 20px;
 }
-.btn2 {
-    font-size: 16px;
-    padding: 10px;
+
+.button:hover {
+
 }
-.btn3 {
-    font-size: 16px;
-    padding: 10px;
+
+.button:active:hover {
+    background-color: green;
+}
+
+
+
+/* footer & credit */
+footer{
+    background-color: palevioletred;
+    align-content: center;
+    text-align: center;
 }
 
 @media (min-width: 600px){

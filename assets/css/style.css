@@ -1,15 +1,20 @@
+@font-face{
+    src: url(/assets/css/fonts/Candyshop.ttf);
+    font-family: "Candyshop"
+}
+
 body {
     background-image: url(/assets/im/CandyBackground.jpg);
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat ;
+    background-size: auto;
+    background-repeat: no-repeat;
 }
 
 h1 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Candyshop";
     font-size: 60px;
-    color: white;
+    color: rgb(235, 99, 235);
 }
 
 article {
@@ -19,7 +24,7 @@ article {
 
 #block-score {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Candyshop";
     font-size: 30px;
     color: white;
     margin: 20px;
@@ -38,7 +43,8 @@ article {
     background-repeat:no-repeat;
     border: none;
     cursor:pointer;
-    overflow: hidden; 
+    overflow: hidden;
+    margin-bottom: 40px;
 }
 .third-row {
     align-content: center;
@@ -50,15 +56,18 @@ article {
 #data-cookie-reset {
     font-size: 20px;
     background-color: blueviolet;
+    font-family: "Candyshop";
     color: white;
     align-content: center;
     height: 80px;
-    width: 80px;
+    width: 160px;
     background-repeat:no-repeat;
     border: 2px solid white;
     border-radius: 50%;
     cursor:pointer;
     overflow: hidden;
+    float: right;
+    margin-bottom: 20px;
 }
 
 #data-cookie-reset:hover{
@@ -74,9 +83,11 @@ aside {
 
 h3 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    color: white;
+    font-family: "Candyshop";
+    font-size: 50px;
+    color: rgb(235, 99, 235);
+    margin: 5px;
+
 }
 
 .flex-container {
@@ -88,14 +99,15 @@ h3 {
 
 /* setup button */ 
 .button {
-    background-color: rgba(256, 149, 248, 70);
+    /*background-color: rgba(256, 149, 248, 70);*/
+    background-image: url(/assets/im/btnbg.jpg);
+    background-size: cover;
     border: 7px solid rgba(253, 111, 241, 45);
     border-radius: 20px;
-    height: 120px;
+    height: 125px;
     width: 240px;
     margin: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.2s;
 }
 
@@ -111,28 +123,42 @@ h3 {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3)
 }
 
+button:disabled,
+button[disabled]{
+    background-image: url(/assets/im/btnbg.jpg);
+    background-size: cover;
+    border: 7px solid rgba(253, 111, 241, 45);
+    border-radius: 20px;
+    height: 120px;
+    width: 240px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    filter: grayscale(100%);
+}
+
+.button:hover {
+    transform: translateY(0px);
+
+}
+
 .btn-value {
+    font-family: "Candyshop";
     color: white;
-    font-size: 40px;
+    font-size: 300%;
     font-weight: bolder;
 }
 #time1 #time2 #time3{
+    font-family: "Candyshop";
     color: gray;
-    font-style: italic
+    font-style: italic;
+    font-weight: bold;
 }
-.price{
+#price1 #price2 #price3 {
+    font-family: "Candyshop";
     color: gray;
-    font-style: italic
+    font-style: italic;
+    font-weight: bold;
 }
-
-/* footer & credit */
-footer{
-    background-color: palevioletred;
-    align-content: center;
-    text-align: center;
-}
-
-
 
 @media (max-width: 860px){
     .flex-container {
@@ -140,5 +166,123 @@ footer{
         flex-direction: column;
     }  
 }
+
+
+
+
+
+
+
+
+
+
+/*
+.container{
+	top:0px;
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0%;
+}
+.loader {
+    text-align: center;
+}
+.loader span {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+	margin: -280px 40px 54px  -34px;
+
+    background: #ff0000;
+    background:url("/assets/im/cookieIcon.png");
+    background-position: center;
+    background-size: cover;
+    
+    -webkit-animation: loader 10s infinite  linear;
+    -moz-animation: loader 10s infinite  linear;
+}
+.loader span:nth-child(5n+5) {
+
+    -webkit-animation-delay: 1.3s;
+    -moz-animation-delay: 1.3s;
+}
+.loader span:nth-child(3n+2) {
+
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+}
+.loader span:nth-child(2n+5) {
+
+    -webkit-animation-delay: 1.7s;
+    -moz-animation-delay: 1.7s;
+}
+
+.loader span:nth-child(3n+10) {
+
+    -webkit-animation-delay: 2.7s;
+    -moz-animation-delay: 2.7s;
+}
+.loader span:nth-child(7n+2) {
+
+    -webkit-animation-delay: 3.5s;
+    -moz-animation-delay: 3.5s;
+}
+.loader span:nth-child(4n+5) {
+
+    -webkit-animation-delay: 5.5s;
+    -moz-animation-delay: 5.5s;
+}
+.loader span:nth-child(3n+7) {
+
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+}
+@-webkit-keyframes loader {
+  0% {
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+
+	-webkit-transform: translate(0, 0px) rotateZ(0deg);
+  }
+  75% {
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+
+	-webkit-transform: translate(100px, 600px) rotateZ(270deg); 
+  }
+  100% {
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+
+	-webkit-transform: translate(150px, 800px) rotateZ(360deg);
+  }
+}
+@-moz-keyframes loader {
+  0% {
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+    
+	-webkit-transform: translate(0, 0px) rotateZ(0deg);
+  }
+  75% {
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+   
+	-webkit-transform: translate(100px, 600px) rotateZ(270deg); 
+  }
+  100% {
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+    
+	-webkit-transform: translate(150px, 800px) rotateZ(360deg);
+  }
+}
+*/ 
 
 

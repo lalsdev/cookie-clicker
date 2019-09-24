@@ -45,7 +45,10 @@ article {
     cursor:pointer;
     overflow: hidden;
     margin-bottom: 40px;
+    transform: rotate(100000deg);
+    transition: transform 3600s;
 }
+
 .third-row {
     align-content: center;
     margin: 20px;

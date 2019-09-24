@@ -89,7 +89,7 @@ h3 {
 /* setup button */ 
 .button {
     background-color: rgba(256, 149, 248, 70);
-    border: 10px solid rgba(253, 111, 241, 45);
+    border: 7px solid rgba(253, 111, 241, 45);
     border-radius: 20px;
     height: 120px;
     width: 240px;
@@ -143,3 +143,4 @@ footer{
 }
 
 */
+

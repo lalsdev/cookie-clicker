@@ -28,12 +28,6 @@ article {
     
 }
 
-/*#cookie {
-    height:500px ;
-    width: 500px;
-}
-*/
-
 /* css du cookie a cliquer */
 #data-cookie-im {
     height:500px ;
@@ -41,6 +35,7 @@ article {
 }
 .third-row {
     align-content: center;
+    margin: 20px;
 }
 
 /* css du bouton reset */
@@ -51,10 +46,14 @@ article {
 }
 
 aside {
-    float: left;
     align-content: center;
     text-align: center;
-    float: left;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
 }
 
 .btn1 {
@@ -69,3 +68,12 @@ aside {
     font-size: 16px;
     padding: 10px;
 }
+
+@media (min-width: 600px){
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+}  
+}
+
+

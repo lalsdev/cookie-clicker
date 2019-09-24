@@ -32,4 +32,4 @@ Debut...
 
 # Credits 
 September 2019 <br>
-Fait en Belgique 🇧🇪
+Fait en Belgique 🇧🇪 for the love of code ❤️

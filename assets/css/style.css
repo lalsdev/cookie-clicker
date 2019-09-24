@@ -1,5 +1,5 @@
 body {
-    background-image: url(/assets/im/CandyBackground.jpg);
+    background-image: url(assets/im/CandyBackground.jpg);
     background-position: contain;
     background-size: fill;
     background-repeat: no-repeat;
@@ -26,7 +26,6 @@ article {
 }
 #data-cookie-score {
     background-color: rgba(40, 40, 40, 50);
-    
 }
 
 /* css du cookie a cliquer */

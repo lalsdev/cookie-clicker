@@ -6,7 +6,7 @@
 body {
     background-image: url(/assets/im/CandyBackground.jpg);
     background-position: center;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 

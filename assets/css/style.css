@@ -17,13 +17,6 @@ h1 {
     color: rgb(231, 75, 140);
     margin-bottom: 5px;
 }
-h6 {
-    text-align: center;
-    font-family: "Candyshop";
-    font-size: 20px;
-    color: rgb(230, 98, 153);
-    margin-top: 5px;
-}
 
 article {
     align-content: center;
@@ -34,31 +27,52 @@ article {
     text-align: center;
     font-family: "Candyshop";
     font-size: 30px;
-    color: white;
+    color: #ffffff;
     margin: 20px;
 }
 
+/*#block-score .tab {
+    background-color: rgb(255, 184, 227);
+    border: 7px solid rgb(167, 75, 156);
+    border-radius: 20px;
+    padding: 10px;
+}*/
+
+
 #data-cookie-score {
-    background-color: rgba(40, 40, 40, 50);
+    background-color: transparent;
 }
 
 #data-cookie-im {
     height:300px ;
     width: 300px;
-    padding-bottom: 20px; 
+    padding: 20px; 
 }
 
 #cookie {
     background-color: Transparent;
     background-repeat:no-repeat;
     border: none;
+    border-radius: 50%;
     cursor:pointer;
     overflow: hidden;
     margin-bottom: 40px;
-    transform: rotate(100000deg);
-    transition: transform 3600s;
     outline: hidden;
-    padding-bottom: 20px;
+    padding: 20px;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    animation-name: spin;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@-webkit-keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
 }
 
 .third-row {
@@ -81,7 +95,7 @@ article {
     background-repeat:no-repeat;
     cursor:pointer;
     overflow: hidden;
-    margin-top: 20px;
+    margin: 20px;
     box-shadow: 0 9px rgb(216, 189, 181);
     align-content: center;
 }
@@ -100,7 +114,7 @@ aside {
 h3 {
     text-align: center;
     font-family: "Candyshop";
-    font-size: 50px;
+    font-size: 40px;
     color: rgb(231, 75, 140);
     margin: 5px;
 }
@@ -143,7 +157,7 @@ button:disabled, button[disabled]{
     background-size: cover;
     border: 7px solid rgba(253, 111, 241, 45);
     border-radius: 20px;
-    color: rgb(150, 150, 150);
+    color: #969696;
     height: 125px;
     width: 240px;
     margin: 20px;
@@ -164,6 +178,8 @@ button:disabled, button[disabled]{
     font-weight: bold;
 }
 
+
+
 #price1 #price2 #price3 {
     font-style: italic;
     font-weight: bold;
@@ -171,6 +187,14 @@ button:disabled, button[disabled]{
 
 footer span {
     height: 80px;;
+}
+
+h6 {
+    text-align: center;
+    font-family: "Candyshop";
+    font-size: 20px;
+    color: white;
+    margin: 10px;
 }
 
 @media (max-width: 860px){

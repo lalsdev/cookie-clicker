@@ -17,13 +17,6 @@ h1 {
     color: rgb(231, 75, 140);
     margin-bottom: 5px;
 }
-h6 {
-    text-align: center;
-    font-family: "Candyshop";
-    font-size: 20px;
-    color: rgb(230, 98, 153);
-    margin-top: 5px;
-}
 
 article {
     align-content: center;
@@ -38,16 +31,16 @@ article {
     margin: 20px;
 }
 
-#block-score .tab {
+/*#block-score .tab {
     background-color: rgb(255, 184, 227);
     border: 7px solid rgb(167, 75, 156);
     border-radius: 20px;
     padding: 10px;
-}
+}*/
 
 
 #data-cookie-score {
-    background-color: rgba(40, 40, 40, 50);
+    background-color: transparent;
 }
 
 #data-cookie-im {
@@ -90,7 +83,7 @@ article {
     background-repeat:no-repeat;
     cursor:pointer;
     overflow: hidden;
-    margin-top: 20px;
+    margin: 20px;
     box-shadow: 0 9px rgb(216, 189, 181);
     align-content: center;
 }
@@ -109,7 +102,7 @@ aside {
 h3 {
     text-align: center;
     font-family: "Candyshop";
-    font-size: 50px;
+    font-size: 40px;
     color: rgb(231, 75, 140);
     margin: 5px;
 }
@@ -182,6 +175,14 @@ button:disabled, button[disabled]{
 
 footer span {
     height: 80px;;
+}
+
+h6 {
+    text-align: center;
+    font-family: "Candyshop";
+    font-size: 20px;
+    color: white;
+    margin: 10px;
 }
 
 @media (max-width: 860px){

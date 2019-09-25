@@ -5,9 +5,37 @@
 
 body {
     background-image: url(../../assets/im/CandyBackground.jpg);
-    background-position: center;
-    background-size: cover;
+    background-position: bottom;
+    background-size: fill;
     background-repeat: no-repeat;
+}
+
+header {
+    display: block;
+    width: 100%;
+}
+
+article {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    width: 50%;
+    align-content: center;
+    text-align: center;
+}
+
+aside {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    width: 50%;
+    align-content: center;
+    text-align: center;
+}
+
+footer {
+    display: block;
+    width: 100%;
 }
 
 h1 {
@@ -15,38 +43,32 @@ h1 {
     font-family: "Candyshop";
     font-size: 60px;
     color: rgb(231, 75, 140);
-    margin-bottom: 5px;
+    margin: 10px;
+    text-shadow: 0 3px rgb(211, 68, 127);
+    
 }
 
-article {
+.flex-container {
     align-content: center;
     text-align: center;
 }
 
 #block-score {
     text-align: center;
+    align-content: center;
     font-family: "Candyshop";
     font-size: 30px;
     color: #ffffff;
     margin: 20px;
 }
 
-/*#block-score .tab {
-    background-color: rgb(255, 184, 227);
-    border: 7px solid rgb(167, 75, 156);
-    border-radius: 20px;
-    padding: 10px;
-}*/
-
-
 #data-cookie-score {
     background-color: transparent;
 }
 
 #data-cookie-im {
-    height:300px ;
-    width: 300px;
-    padding: 20px; 
+    height:400px ;
+    width: 400px; 
 }
 
 #cookie {
@@ -76,10 +98,7 @@ article {
 }
 
 .third-row {
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 20px;
+    float: left;
 }
 
 #data-cookie-reset {
@@ -95,7 +114,7 @@ article {
     background-repeat:no-repeat;
     cursor:pointer;
     overflow: hidden;
-    margin: 20px;
+    margin: 10px;
     box-shadow: 0 9px rgb(216, 189, 181);
     align-content: center;
 }
@@ -105,11 +124,6 @@ article {
     transform: translateY(4px);
 }
 
-aside {
-    display: flex;
-    align-content: center;
-    text-align: center;
-}
 
 h3 {
     text-align: center;
@@ -117,12 +131,6 @@ h3 {
     font-size: 40px;
     color: rgb(231, 75, 140);
     margin: 5px;
-}
-
-.flex-container {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
 }
 
 
@@ -185,9 +193,6 @@ button:disabled, button[disabled]{
     font-weight: bold;
 }
 
-footer span {
-    height: 80px;;
-}
 
 h6 {
     text-align: center;
@@ -198,10 +203,14 @@ h6 {
 }
 
 @media (max-width: 860px){
-    .flex-container {
-        display: flex;
+    article {
+        display: block;
         flex-direction: column;
-    }  
+    }
+    aside {
+        display: block;
+        flex-direction: column;
+    }
 }
 
 

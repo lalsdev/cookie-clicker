@@ -10,33 +10,44 @@
 </head>
 
 <body>
+    <!-- top center head -->
     <header>
-        <h1>The Cookie Clicker Game</h1>
+        <h1>The Candy Clicker Game</h1>
     </header>
+
     <main>
-        <article>
+        <!-- Left block of page -->
+        <article class="flex-container">
             <div id="wrapper">
-                <!-- block for score -->
+
+                <!-- Score  -->
                 <div id="block-score">
+                    <h3>SCORE</h3>
                     <label for="data-cookie-im">
-                        <span class="tab">
-                            <h3>SCORE</h3>
+                        <div class="tab">
                             <span id="data-cookie-score"></span> cookie(s)
-                        </span>
+                        </div>
                     </label>
                 </div>
 
-                <!-- block for cookie -->
+                <!-- Cookie -->
                 <div class="cookie-row">
                     <button id="cookie">
                         <img src="assets/im/candy-146589_640.png" alt="cookie" id="data-cookie-im"> 
                     </button>
                 </div>
+
+                <!-- Reset  -->
+                <div class="third-row">
+                    <button id="data-cookie-reset"></button>
+                </div>
+
             </div>
         </article>
 
-        <h3>STORE</h3>
-        <aside class="flex-container">
+        <!-- Right block of page -->
+        <aside>
+            <h3>STORE</h3>
             <div>
                 <button disabled id="btn1" class="button"><span class="btn-value">x5</span>
                     <span>
@@ -62,18 +73,17 @@
                 <button disabled id="btn3" class="button"><span class="btn-value">Bonus</span>
                     <br>
                     <span>
-                        <span id="time3">duration: <span>20</span> sec</span>
+                        <span id="time3">duration: <span>30</span> sec</span>
                         <br>
                         <span id="price3">Cost: <span>30</span> </span>
                     </span>
                 </button>
             </div>
         </aside>
-        <div class="third-row">
-            <button id="data-cookie-reset"></button>
-        </div>
+
+        <!-- Bottom center fotter -->
         <footer>
-                <h6>Created by Laly Singh, Julio Zinga, Julien Goetghebuer & Francois Thibaut de Maisieres</h6>
+            <h6>Created by Laly Singh, Julio Zinga, Julien Goetghebuer & Francois Thibaut de Maisieres</h6>
         </footer>
     </main>
 

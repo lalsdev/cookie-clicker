@@ -4,6 +4,7 @@ Le but est de créer un jeu du style cookie clicker.
 
 ## Motivation de ce jeu?
 C'est un projet de groupe faisant partie de notre formation à BeCode. <br>
+
 Le but : 
 - consolider nos connaissances en JavaScript + Git
 - capacités de collaboration
@@ -16,7 +17,7 @@ Pseudos GitHub des collaborateurs :
 - [Laly](https://github.com/lalysingh)
 - [Julien](https://github.com/ggbjulien)
 
-## Explication de notre methodologie pour ce projet
+## Explication de notre methodologie et etapes pour ce projet
 ### Etapes :
 - Regroupement et recherches pour comprendre comment le jeu du cookie clicker fonctionne
 - Creation d'un mock-up pour visualiser la page web en groupe
@@ -59,7 +60,7 @@ Step 11: bonus
 - Collaboration de groupe :relaxed:
 
 # Progression
-Essai de boutons
+Ajout d'options pour le joueur
 
 # Credits 
 Septembre 2019 <br>

@@ -1,10 +1,10 @@
 @font-face{
-    src: url(/assets/css/fonts/Candyshop.ttf);
+    src: url(assets/css/fonts/Candyshop.ttf);
     font-family: "Candyshop"
 }
 
 body {
-    background-image: url(/assets/im/CandyBackground.jpg);
+    background-image: url(assets/im/CandyBackground.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -286,6 +286,6 @@ button[disabled]{
 	-webkit-transform: translate(150px, 800px) rotateZ(360deg);
   }
 }
-*/ 
+*/
 
 

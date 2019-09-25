@@ -14,7 +14,15 @@ h1 {
     text-align: center;
     font-family: "Candyshop";
     font-size: 60px;
-    color: rgb(235, 99, 235);
+    color: rgb(231, 75, 140);
+    margin-bottom: 5px;
+}
+h6 {
+    text-align: center;
+    font-family: "Candyshop";
+    font-size: 20px;
+    color: rgb(230, 98, 153);
+    margin-top: 5px;
 }
 
 article {
@@ -29,15 +37,17 @@ article {
     color: white;
     margin: 20px;
 }
+
 #data-cookie-score {
     background-color: rgba(40, 40, 40, 50);
 }
 
-/* css du cookie a cliquer */
 #data-cookie-im {
     height:300px ;
-    width: 300px; 
+    width: 300px;
+    padding-bottom: 20px; 
 }
+
 #cookie {
     background-color: Transparent;
     background-repeat:no-repeat;
@@ -48,51 +58,51 @@ article {
     transform: rotate(100000deg);
     transition: transform 3600s;
     outline: hidden;
+    padding-bottom: 20px;
 }
 
 .third-row {
     align-content: center;
-    margin: 20px;
-}
-
-
-/* css du bouton reset */
-#data-cookie-reset {
-    font-size: 20px;
-    background-image: url(../../assets/im/icon/icons8-reset-100.png);
-    background-color: transparent;
-    background-position: center;
-    background-size: cover;
-    border: none;
-    border-radius: 50%;
-    align-content: center;
-    height: 80px;
-    width: 80px;
-    background-repeat:no-repeat;
-    cursor:pointer;
-    overflow: hidden;
+    justify-content: center;
+    text-align: center;
     margin-bottom: 20px;
 }
 
-#data-cookie-reset:hover{
-    transition-delay: 3s;
-    transform: scale(0.10)
+#data-cookie-reset {
+    background-image: url(../../assets/im/icon/icons8-reset-100.png);
+    background-color: transparent;
+    background-position: center;
+    background-size: fill;
+    border: none;
+    border-radius: 50%;
+    align-content: center;
+    height: 75px;
+    width: 75px;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    margin-top: 20px;
+    box-shadow: 0 9px rgb(216, 189, 181);
+    align-content: center;
+}
+
+#data-cookie-reset:active{
+    box-shadow: 0 5px rgb(189, 165, 158);
+    transform: translateY(4px);
 }
 
 aside {
     display: flex;
     align-content: center;
     text-align: center;
-    clear: both;
 }
 
 h3 {
     text-align: center;
     font-family: "Candyshop";
     font-size: 50px;
-    color: rgb(235, 99, 235);
+    color: rgb(231, 75, 140);
     margin: 5px;
-
 }
 
 .flex-container {
@@ -104,47 +114,42 @@ h3 {
 
 /* setup button */ 
 .button {
-    /*background-color: rgba(256, 149, 248, 70);*/
     background-image: url(../../assets/im/btnbg.jpg);
+    background-position: center;
     background-size: cover;
     border: 7px solid rgba(253, 111, 241, 45);
     border-radius: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
     height: 125px;
     width: 240px;
     margin: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.2s;
     outline: hidden;
+    box-shadow: 0 9px rgb(212, 97, 199);
 }
 
-.button:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3)
-
+.button:active {
+    box-shadow: 0 5px rgb(167, 75, 156);
+    transform: translateY(4px);
+    color: rgb(150, 150, 150);
+    font-style: italic;
+    font-weight: bold;
 }
 
-.button:active:hover {
-    background-color: rgba(253, 111, 241, 45);
-    transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3)
-}
-
-button:disabled,
-button[disabled]{
+button:disabled, button[disabled]{
     background-image: url(../../assets/im/btnbg.jpg);
+    background-position: center;
     background-size: cover;
     border: 7px solid rgba(253, 111, 241, 45);
     border-radius: 20px;
-    height: 120px;
+    color: rgb(150, 150, 150);
+    height: 125px;
     width: 240px;
     margin: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    outline: hidden;
+    box-shadow: 0 9px rgb(114, 114, 114);
     filter: grayscale(100%);
-}
-
-.button:hover {
-    transform: translateY(0px);
-
 }
 
 .btn-value {
@@ -153,17 +158,19 @@ button[disabled]{
     font-size: 300%;
     font-weight: bolder;
 }
+
 #time1 #time2 #time3{
-    font-family: "Candyshop";
-    color: gray;
     font-style: italic;
     font-weight: bold;
 }
+
 #price1 #price2 #price3 {
-    font-family: "Candyshop";
-    color: gray;
     font-style: italic;
     font-weight: bold;
+}
+
+footer span {
+    height: 80px;;
 }
 
 @media (max-width: 860px){

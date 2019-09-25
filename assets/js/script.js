@@ -21,6 +21,9 @@
     const $price3 = document.querySelector("#price3 span");
     const prices = [$price1, $price2, $price3];
 
+    //const interval pour les animations
+    const intervalIds = [undefined, undefined, undefined];
+
     // on cree la propriete dans l'objet localstorage et ou lui attribue 
     // localStorage est un objet deja cree dans js on lui ajoute une cle et ou lui attribue une valeur
     localStorage.score = localStorage.getItem("score") || 0;
@@ -80,13 +83,22 @@
 
     }
 
+    function increaseScore() {
+        const newScore = parseInt($score.innerHTML) + 1 ;
+        $score.innerHTML = newScore;
+        localStorage.score = newScore;
+    }
+
+    function animateScore() {
+        intervalIds[1] = setInterval(increaseScore, 1000);
+    }
+
     
     //Events
 
     $cookie.addEventListener("click", () => {
         addCookie();
         toggleAllBtns();
-        decreaseDuration(1);
     });
 
     $reset.addEventListener("click", () => {
@@ -95,6 +107,7 @@
         localStorage.multiplier = 1;
         localStorage.autoclick = 0;
         toggleAllBtns();
+        clearInterval(intervalIds[1]);
     });
 
     $btnmult.addEventListener("click", () => {
@@ -118,7 +131,32 @@
         }
     });
 
+    $btnauto.addEventListener("click", () => {
+        if (!$btnauto.getAttribute("disabled")) {
+            if (localStorage.purchasesAuto == "false") {
+                localStorage.purchasesAuto = "true";
+                const newScore = parseInt($score.innerHTML) - parseInt($price2.innerHTML);
+                if (newScore >= 0){
+                    $score.innerHTML = newScore;
+                    localStorage.score = newScore;
+                } 
+                animateScore();
+            } 
+            else {localStorage.purchasesAuto = "false";}
+        }
+        else {localStorage.purchasesAuto = "false";}
 
+    });
 
-    
+    $btnbon.addEventListener("click", () => {
+        if (!$btnbon.getAttribute("disabled")) {
+            if (localStorage.purchasesBonus == "false") {
+                localStorage.purchasesBonus = "true";
+
+            }
+            else{localStorage.purchasesBonus = "false";}
+        }
+        else {localStorage.purchasesBonus = "false";}
+    });
+
 })();

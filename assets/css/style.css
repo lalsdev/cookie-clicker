@@ -34,9 +34,17 @@ article {
     text-align: center;
     font-family: "Candyshop";
     font-size: 30px;
-    color: white;
+    color: #ffffff;
     margin: 20px;
 }
+
+#block-score .tab {
+    background-color: rgb(255, 184, 227);
+    border: 7px solid rgb(167, 75, 156);
+    border-radius: 20px;
+    padding: 10px;
+}
+
 
 #data-cookie-score {
     background-color: rgba(40, 40, 40, 50);
@@ -45,20 +53,21 @@ article {
 #data-cookie-im {
     height:300px ;
     width: 300px;
-    padding-bottom: 20px; 
+    padding: 20px; 
 }
 
 #cookie {
     background-color: Transparent;
     background-repeat:no-repeat;
     border: none;
+    border-radius: 50%;
     cursor:pointer;
     overflow: hidden;
     margin-bottom: 40px;
     transform: rotate(100000deg);
     transition: transform 3600s;
     outline: hidden;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 .third-row {
@@ -143,7 +152,7 @@ button:disabled, button[disabled]{
     background-size: cover;
     border: 7px solid rgba(253, 111, 241, 45);
     border-radius: 20px;
-    color: rgb(150, 150, 150);
+    color: #969696;
     height: 125px;
     width: 240px;
     margin: 20px;
@@ -163,6 +172,8 @@ button:disabled, button[disabled]{
     font-style: italic;
     font-weight: bold;
 }
+
+
 
 #price1 #price2 #price3 {
     font-style: italic;

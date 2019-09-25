@@ -36,7 +36,7 @@ article {
 /* css du cookie a cliquer */
 #data-cookie-im {
     height:300px ;
-    width: 300px;
+    width: 300px; 
 }
 #cookie {
     background-color: Transparent;
@@ -47,6 +47,7 @@ article {
     margin-bottom: 40px;
     transform: rotate(100000deg);
     transition: transform 3600s;
+    outline: none;
 }
 
 .third-row {
@@ -112,6 +113,7 @@ h3 {
     margin: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.2s;
+    outline: none;
 }
 
 .button:hover {

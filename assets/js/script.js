@@ -10,9 +10,9 @@
     const $btnbon = document.getElementById("btn3");
     const btns = [$btnmult, $btnauto, $btnbon];
     //const durees pour les trois boutons puis ces elements dans un tableau
-    const $duration1 = document.querySelector("#btn1 span");
-    const $duration2 = document.querySelector("#btn2 span");
-    const $duration3 = document.querySelector("#btn3 span");
+    const $duration1 = document.querySelector("#time1 span");
+    const $duration2 = document.querySelector("#time2 span");
+    const $duration3 = document.querySelector("#time3 span");
     const durations = [$duration1, $duration2, $duration3];
     
     // const prix qui vont changer
@@ -26,6 +26,9 @@
     localStorage.score = localStorage.getItem("score") || 0;
     localStorage.multiplier = localStorage.getItem("multiplier") || 1; 
     localStorage.autoclick = localStorage.getItem("autoclick") || 0;
+    localStorage.purchasesMultiplier = "false";
+    localStorage.purchasesAuto = "false";
+    localStorage.purchasesBonus = "false";
     $score.innerHTML = parseInt(localStorage.score);
 
     // Functions
@@ -62,12 +65,28 @@
         localStorage.score = newScore;
     }
 
+    function decreaseDuration(btnindex) {
+        const $duration = durations[btnindex];
+        const seconds = parseInt($duration.innerHTML) - 1;
+        if (seconds >= 0) {
+            $duration.innerHTML = seconds;
+            $duration.style.color = "#820d0d";
+            $duration.style.fontWeight = "bold";
+        } else {
+            $duration.innerHTML = 20;
+            $duration.style.color = "#969696";
+            $duration.style.fontWeight = "normal";
+        }
+
+    }
+
     
     //Events
 
     $cookie.addEventListener("click", () => {
         addCookie();
         toggleAllBtns();
+        decreaseDuration(1);
     });
 
     $reset.addEventListener("click", () => {
@@ -78,4 +97,24 @@
         toggleAllBtns();
     });
 
+    $btnmult.addEventListener("click", () => {
+        //travaille que si attribut disabled n'est pas present dans le bouton btnmult = que le bouton est actif
+        //condition est-ce qu'on peut faire quelque chose si le bouton est active
+        if (!$btnmult.getAttribute("disabled")){
+            // si pas encore acheter alors fais ca et si pas encore acheter
+            if (localStorage.purchasesMultiplier == "false") {
+                localStorage.purchasesMultiplier = "true";
+                const newScore = parseInt($score.innerHTML) - parseInt($price1.innerHTML);
+                $score.innerHTML = newScore;
+                localStorage.score = newScore;
+                localStorage.multiplier = 5;
+            } else {
+                localStorage.purchasesMultiplier = "false";
+            }
+            console.log(localStorage);
+        } else {
+            localStorage.purchases[0] = "false";
+            localStorage.multiplier = 1;
+        }
+    });
 })();

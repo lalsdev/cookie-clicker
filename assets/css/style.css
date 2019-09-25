@@ -64,6 +64,7 @@ article {
     background-position: center;
     background-size: cover;
     border: none;
+    border-radius: 50%;
     align-content: center;
     height: 80px;
     width: 80px;

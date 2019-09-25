@@ -57,10 +57,22 @@ article {
     cursor:pointer;
     overflow: hidden;
     margin-bottom: 40px;
-    transform: rotate(100000deg);
-    transition: transform 3600s;
     outline: hidden;
     padding: 20px;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    animation-name: spin;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@-webkit-keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
 }
 
 .third-row {

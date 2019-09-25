@@ -59,23 +59,23 @@ article {
 /* css du bouton reset */
 #data-cookie-reset {
     font-size: 20px;
-    background-color: blueviolet;
-    font-family: "Candyshop";
-    color: white;
+    background-image: url(../../assets/im/icon/icons8-reset-100.png);
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    border: none;
     align-content: center;
     height: 80px;
-    width: 160px;
+    width: 80px;
     background-repeat:no-repeat;
-    border: 2px solid white;
-    border-radius: 50%;
     cursor:pointer;
     overflow: hidden;
-    float: right;
     margin-bottom: 20px;
 }
 
 #data-cookie-reset:hover{
-    background-color: green;;
+    transition-delay: 3s;
+    transform: scale(0.10)
 }
 
 aside {

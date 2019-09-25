@@ -8,6 +8,7 @@
     const $btnmult = document.getElementById("btn1");
     const $btnauto = document.getElementById("btn2");
     const $btnbon = document.getElementById("btn3");
+    const $valueMultiplier = document.querySelector(".btn-value");
     const btns = [$btnmult, $btnauto, $btnbon];
     //const durees pour les trois boutons puis ces elements dans un tableau
     const $duration1 = document.querySelector("#time1 span");
@@ -79,18 +80,30 @@
             $duration.innerHTML = 20;
             $duration.style.color = "#969696";
             $duration.style.fontWeight = "normal";
+            clearInterval(intervalIds[2]);
+            $valueMultiplier.innerHTML = "x5";
+            if (!$btnmult.getAttribute("disabled")) {
+                localStorage.multiplier = 5;
+            }
+            else {localStorage.multiplier = 1;}
+
+
         }
 
     }
 
-    function increaseScore() {
+    function animateDuration(btnindex) {
+        intervalIds[btnindex] = setInterval(decreaseDuration, 1000, btnindex);
+    }
+
+    function increaseScore(btnindex) {
         const newScore = parseInt($score.innerHTML) + 1 ;
         $score.innerHTML = newScore;
         localStorage.score = newScore;
     }
 
-    function animateScore() {
-        intervalIds[1] = setInterval(increaseScore, 1000);
+    function animateScore(btnindex) {
+        intervalIds[btnindex] = setInterval(increaseScore, 1000, btnindex);
     }
 
     
@@ -140,7 +153,7 @@
                     $score.innerHTML = newScore;
                     localStorage.score = newScore;
                 } 
-                animateScore();
+                animateScore(1);
             } 
             else {localStorage.purchasesAuto = "false";}
         }
@@ -152,7 +165,14 @@
         if (!$btnbon.getAttribute("disabled")) {
             if (localStorage.purchasesBonus == "false") {
                 localStorage.purchasesBonus = "true";
-
+                const newScore = parseInt($score.innerHTML) - parseInt($price3.innerHTML);
+                if (newScore >= 0){
+                    $score.innerHTML = newScore;
+                    localStorage.score = newScore;
+                    $valueMultiplier.innerHTML = "x10";
+                    localStorage.multiplier = 10;
+                }
+                animateDuration(2);
             }
             else{localStorage.purchasesBonus = "false";}
         }

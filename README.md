@@ -3,7 +3,7 @@
 Le but est de créer un jeu du style cookie clicker.
 
 ## Motivation de ce jeu?
-C'est un projet de groupe faisant partie de notre formation à BeCode.
+C'est un projet de groupe faisant partie de notre formation à BeCode. <br>
 Le but : 
 - consolider nos connaissances en JavaScript + Git
 - capacités de collaboration

@@ -1,5 +1,5 @@
 @font-face{
-    src: url(assets/css/fonts/Candyshop.ttf);
+    src: url(../../assets/css/fonts/Candyshop.ttf);
     font-family: "Candyshop"
 }
 
@@ -47,7 +47,7 @@ article {
     margin-bottom: 40px;
     transform: rotate(100000deg);
     transition: transform 3600s;
-    outline: none;
+    outline: hidden;
 }
 
 .third-row {
@@ -104,7 +104,7 @@ h3 {
 /* setup button */ 
 .button {
     /*background-color: rgba(256, 149, 248, 70);*/
-    background-image: url(/assets/im/btnbg.jpg);
+    background-image: url(../../assets/im/btnbg.jpg);
     background-size: cover;
     border: 7px solid rgba(253, 111, 241, 45);
     border-radius: 20px;
@@ -113,7 +113,7 @@ h3 {
     margin: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.2s;
-    outline: none;
+    outline: hidden;
 }
 
 .button:hover {
@@ -130,7 +130,7 @@ h3 {
 
 button:disabled,
 button[disabled]{
-    background-image: url(/assets/im/btnbg.jpg);
+    background-image: url(../../assets/im/btnbg.jpg);
     background-size: cover;
     border: 7px solid rgba(253, 111, 241, 45);
     border-radius: 20px;

@@ -100,21 +100,25 @@
     $btnmult.addEventListener("click", () => {
         //travaille que si attribut disabled n'est pas present dans le bouton btnmult = que le bouton est actif
         //condition est-ce qu'on peut faire quelque chose si le bouton est active
-        if (!$btnmult.getAttribute("disabled")){
+        if (!$btnmult.getAttribute("disabled")) {
             // si pas encore acheter alors fais ca et si pas encore acheter
             if (localStorage.purchasesMultiplier == "false") {
                 localStorage.purchasesMultiplier = "true";
                 const newScore = parseInt($score.innerHTML) - parseInt($price1.innerHTML);
-                $score.innerHTML = newScore;
-                localStorage.score = newScore;
-                localStorage.multiplier = 5;
-            } else {
-                localStorage.purchasesMultiplier = "false";
+                if (newScore >= 0){
+                    $score.innerHTML = newScore;
+                    localStorage.score = newScore;
+                } 
             }
-            console.log(localStorage);
-        } else {
+            else {localStorage.purchasesMultiplier = "false";}
+        }
+        else {
             localStorage.purchases[0] = "false";
             localStorage.multiplier = 1;
         }
     });
+
+
+
+    
 })();

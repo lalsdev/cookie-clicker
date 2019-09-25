@@ -77,7 +77,7 @@
             $duration.style.color = "#820d0d";
             $duration.style.fontWeight = "bold";
         } else {
-            $duration.innerHTML = 20;
+            $duration.innerHTML = 30;
             $duration.style.color = "#969696";
             $duration.style.fontWeight = "normal";
             clearInterval(intervalIds[2]);
@@ -169,8 +169,8 @@
                 if (newScore >= 0){
                     $score.innerHTML = newScore;
                     localStorage.score = newScore;
-                    $valueMultiplier.innerHTML = "x10";
-                    localStorage.multiplier = 10;
+                    $valueMultiplier.innerHTML = "x200";
+                    localStorage.multiplier = 200;
                 }
                 animateDuration(2);
             }

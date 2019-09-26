@@ -26,6 +26,9 @@ Pseudos GitHub des collaborateurs :
     - JavaScript et CSS
 - Repartition des taches 
 
+![](/assets/im/mockup.jpg)
+
+
 ### Etapes du jeu :
 - Etape 1: dans le HTML, créer un bouton qui incremente un compteur et un label initialisé à 0 pour afficher le compteur de bonbons
 

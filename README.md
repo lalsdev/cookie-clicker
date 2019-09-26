@@ -26,7 +26,8 @@ Pseudos GitHub des collaborateurs :
     - JavaScript et CSS
 - Repartition des taches 
 
-![](/assets/im/mockup.jpg)
+#### Apercu de notre jeu
+![](/assets/im/mockup1.jpg)
 
 
 ### Etapes du jeu :

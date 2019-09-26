@@ -61,7 +61,7 @@ Pseudos GitHub des collaborateurs :
 # Progression
 Ajout d'options pour le joueur
 
-![](https://tenor.com/view/food-chocolate-yum-eating-ilove-lucy-gif-4901497)
+![](https://media.giphy.com/media/GdNbYAcBjfqTK/giphy.gif)
 
 # Credits 
 Septembre 2019 <br>

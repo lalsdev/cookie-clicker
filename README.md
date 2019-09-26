@@ -27,7 +27,7 @@ Pseudos GitHub des collaborateurs :
 - Repartition des taches 
 
 #### Apercu de notre jeu
-![](/assets/im/mockup.jpg)
+![](/assets/im/mockup1.jpg)
 
 
 ### Etapes du jeu :

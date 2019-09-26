@@ -26,7 +26,7 @@ Pseudos GitHub des collaborateurs :
     - JavaScript et CSS
 - Repartition des taches 
 
-#### Apercu de notre jeu
+#### Apercu de notre jeu sur papier
 ![](/assets/im/mockup1.jpg)
 
 

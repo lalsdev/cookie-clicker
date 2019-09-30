@@ -135,6 +135,7 @@
                     $score.innerHTML = newScore;
                     localStorage.score = newScore;
                 } 
+                localStorage.multiplier = 5;
             }
             else {localStorage.purchasesMultiplier = "false";}
         }

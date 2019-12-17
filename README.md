@@ -27,7 +27,7 @@ Pseudos GitHub des collaborateurs :
 - Repartition des taches 
 
 #### Apercu de notre jeu 
-
+![desktopview](assets/im/previewDesktop.png)
 
 ### Etapes du jeu :
 - Etape 1: dans le HTML, créer un bouton qui incremente un compteur et un label initialisé à 0 pour afficher le compteur de bonbons
